@@ -37,3 +37,14 @@ This script will:
   
 **3.** For Reading features calculation run ```python data/reading_features.py```. The script will use fixation points (x,y) and generated segmentation masks.
 
+## Train and Evaluate the Model
+
+```
+python run_main.py
+```
+
+The script first calls the ```load_data``` function from ```src/data_loader.py```. This function expects that the data is already split into train, val, and test sets, each saved in ```pickle``` format. 
+
+**How to Prepare Pickle Files:** To create the required pickle datasets, refer to the following script ```src/pseudo_code_for_pickle.py```. This script provides a template for processing your dataset. It was designed specifically for our internal data structure and should be adapted to your own data. We've inserted comments in ```pseudo_code_for_pickle.py``` to indicate where you need to modify the code.
+
+
