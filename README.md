@@ -17,7 +17,7 @@ This study aims to develop and validate a transformer-based algorithm that predi
 
 ## Getting started
 
-**1.** You will need two types of data: fixation points (x, y) and chest X-ray images. If you have raw gaze data, it needs to be processed to identify fixations (i.e., moments when the gaze is relatively stable), as the number of (x, y) points in a file will affect computation time. You may use any fixation detection method. One commonly cited approach is:
+**1.** You will need two types of data: fixation points (x, y) and chest X-ray images. If you have raw gaze data, it needs to be processed to identify fixations (i.e., moments when the gaze is relatively stable), as the number of (x, y) points in a file will affect computation time. You may use any fixation detection method. As described in the paper, we calculated the angular velocity of eye movements and applied a threshold. Other methods can be found here:
 
 > Dario D. Salvucci and Joseph H. Goldberg (2000). Identifying Fixations and Saccades in Eye-Tracking Protocols.
 
