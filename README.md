@@ -29,8 +29,7 @@ This script will:
 
 * Load chest X-ray images located in ```IMAGE_PATH``` directory.
 * Generate segmentation masks (referred to as _M_) based on anatomical structures, please check [PSPNet](https://github.com/mlmed/torchxrayvision). Generated masks will save in ```OUTPUT_DIR_FOR_MASKS``` directory.
-* Generate anatomical patches and saved them in ```ANATOMICAL_PATH``` directory.
-* 
+* Generate anatomical patches, saved them in ```ANATOMICAL_PATH``` directory. It also calculated set of patches that are considered important. 
   
 
 
