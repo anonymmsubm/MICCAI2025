@@ -20,19 +20,19 @@ from src.utils import CustomEncoder, model_eval
 
 config = {
     "seed": 42,
-    "num_epochs": 10,
-    "batch_size": 32,
+    "num_epochs": 100,
+    "batch_size": 8,
     "model_params": {
-        "input_size": 128,
-        "hidden_size": 64,
-        "num_layers": 2,
-        "output_size": 1,
-        "input_dim": 128,
-        "embed_dim": 64,
-        "nhead": 4,
-        "d_hid": 256,
+        "input_size": 43,
+        "hidden_size": 16,
+        "num_layers": 6,
+        "output_size": 2,
+        "input_dim": 256,
+        "embed_dim": 512,
+        "nhead": 2,
+        "d_hid": 2048,
         "nlayers": 2,
-        "lr": 0.001
+        "lr": 1e-05
     },
     "data_folder": " ",
     "path_to_patches": ".../__allData/miccai2025/anatomical_patches_16_img224",
