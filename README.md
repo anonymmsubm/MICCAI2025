@@ -25,14 +25,14 @@ This study aims to develop and validate a transformer-based algorithm that predi
 data/main.py
 ```
 
-![Alt text](github_img1.png)
+![](github_img1.png)
 
 This script will:
 
-* Load chest X-ray images located in ```IMAGE_PATH``` directory.
-* Generate segmentation masks (referred to as _M_) based on anatomical structures, please check [PSPNet](https://github.com/mlmed/torchxrayvision). Generated masks will save in ```OUTPUT_DIR_FOR_MASKS``` directory.
-* Generate anatomical patches, saved them in ```ANATOMICAL_PATH``` directory. It also calculated set of patches that are considered important.
-* Optional: To accelerate processing, the script optionally uses the ```ray``` library for parallel execution. However, this is not required. If you encounter issues or prefer to run the script without parallelism, you can simply comment out the relevant lines involving ray. 
+* Load chest X-ray images located in the ```IMAGE_PATH``` directory. An example image is referred to as _I_ in the figure.
+* Generate segmentation masks (referred to as _M_ with a subscript _I_ in the figure) based on anatomical structures, please see [PSPNet](https://github.com/mlmed/torchxrayvision). The generated masks will be saved in the ```OUTPUT_DIR_FOR_MASKS``` directory.
+* Generate anatomical patches and save them in the ```ANATOMICAL_PATH``` directory. This intermediate stage is indicated as _V_ with subscript _I_ in the figure. The script also computes a set of patches considered important (denoted as _M_ with superscript _(t)_).
+* Optional: To accelerate processing, the script can use the ```ray``` library for parallel execution. However, this is not required. If you encounter issues or prefer to run the script without parallelism, you can simply comment out the relevant lines involving ```ray```. 
   
 
 
