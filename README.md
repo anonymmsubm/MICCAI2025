@@ -9,6 +9,7 @@ This study aims to develop and validate a transformer-based algorithm that predi
 ```
 ├── data/                  # Data loading and preprocessing scripts
 ├── src/                   # Source code
+├── run_main.py            # Main function for model training and evaluation
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project overview
 ```
@@ -45,6 +46,5 @@ python run_main.py
 
 The script first calls the ```load_data``` function from ```src/data_loader.py```. This function expects that the data is already split into train, val, and test sets, each saved in ```pickle``` format. 
 
-**How to Prepare Pickle Files:** To create the required pickle datasets, refer to the following script ```src/pseudo_code_for_pickle.py```. This script provides a template for processing your dataset. It was designed specifically for our internal data structure and should be adapted to your own data. We've inserted comments in ```pseudo_code_for_pickle.py``` to indicate where you need to modify the code.
-
+**How to Prepare Pickle Files:** To create the required pickle datasets, refer to the script ```src/pseudo_code_for_pickle.py```. This script serves as a template for processing your dataset. It was designed specifically for our internal data structure and should be adapted to fit your own. We've added comments in ```pseudo_code_for_pickle.py``` to indicate where modifications are needed.
 
