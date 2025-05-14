@@ -8,6 +8,7 @@ This study aims to develop and validate a transformer-based algorithm that predi
 
 ```
 ├── data/                  # Data loading and preprocessing scripts
+├── src/                   # Source code
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project overview
 ```
