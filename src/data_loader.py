@@ -114,9 +114,9 @@ def load_data(**kwargs):
     batch_size = kwargs.get("batch_size", 64)
     normalization = kwargs.get("normalization", False)
 
-    grouped_test = utils.load_pickle_file('/home/csn801/JBHI/lib/grouped_test.pkl')
-    grouped_val = utils.load_pickle_file('/home/csn801/JBHI/lib/grouped_val.pkl')
-    grouped_train = utils.load_pickle_file('/home/csn801/JBHI/lib/grouped_train.pkl')
+    grouped_test = utils.load_pickle_file('./grouped_test.pkl')
+    grouped_val = utils.load_pickle_file('./grouped_val.pkl')
+    grouped_train = utils.load_pickle_file('./grouped_train.pkl')
 
     train_dataset = ViTabularDataset(grouped_train, 
                                      sequence_length, 
