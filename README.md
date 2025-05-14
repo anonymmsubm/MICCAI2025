@@ -34,5 +34,5 @@ This script will:
 * Generate anatomical patches and save them in the ```ANATOMICAL_PATH``` directory. This intermediate stage is indicated as _V_ with subscript _I_ in the figure. The script also computes a set of patches considered important (denoted as _M_ with superscript _(t)_).
 * Optional: To accelerate processing, the script can use the ```ray``` library for parallel execution. However, this is not required. If you encounter issues or prefer to run the script without parallelism, you can simply comment out the relevant lines involving ```ray```. 
   
-
+**2.** For Reading features calculation run ```python data/reading_features.py```. The script will use fixation points (x,y) and generated segmentation masks.
 
