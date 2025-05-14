@@ -25,6 +25,8 @@ This study aims to develop and validate a transformer-based algorithm that predi
 data/main.py
 ```
 
+![Alt text](github_img1.png)
+
 This script will:
 
 * Load chest X-ray images located in ```IMAGE_PATH``` directory.
